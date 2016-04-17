@@ -10,11 +10,7 @@
 #define UPPER 300  // Upper limit.
 #define STEP  29   // Step size.
 
-// Converts Fahrenheit to Celsius.
-double fahr2celsius(int fahr)
-{
-    return (5.0/9.0)*(fahr-32);
-}
+double fahr2celsius(int fahr);
 
 main()
 {
@@ -24,5 +20,8 @@ main()
         printf("%3d\t%6.1f\n", fahr, fahr2celsius(fahr));
 }
 
-
-
+// fahr2celsius: Converts Fahrenheit to Celsius.
+double fahr2celsius(int fahr)
+{
+    return (5.0/9.0)*(fahr-32);
+}

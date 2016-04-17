@@ -33,7 +33,7 @@ main()
     return 0;
 }
 
-// power: raise a base to n-th power; n >= 0
+// power: Raise a base to n-th power; n >= 0.
 int power(int base, int n)
 {
     int i, p;
