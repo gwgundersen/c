@@ -6,16 +6,18 @@
 //------------------------------------------------------------------------------
 
 /*
-    Example test run:
-        a	b
+    Example run:
+        a
+        a  b
+        a       b
         a.......b
         aaa     b
         aaa.....b
-        aaa	bb 
+        aaa     bb 
         aaa.....bb
-        aaa	bb	c
+        aaa	    bb	    c
         aaa.....bb......c
-        aaa	bb	cc 
+        aaa     bb	cc 
         aaa.....bb......cc
         aaaaaaaabbbbb	cc
         aaaaaaaabbbbb...cc
@@ -32,6 +34,13 @@ int getline_(char line[], int maxline);
 
 main()
 {
+    // This program's complexity comes from the fact that there are two loops.
+    // The first loops over the input line, and uses its own index to get the
+    // next char to compute against. The second loop is implicit: it's really a
+    // fixed-length array that is indexed by a separate variable. Its step size
+    // depends on the number of spaces between the next tab stop and its
+    // current location.
+
     char iline[MAXLINE];  // Current input line.
     char oline[MAXLINE];  // Detabbed output line.
     int ii;  // Indexes input.
@@ -43,6 +52,7 @@ main()
         if (len > 0) {
             ts = COLWIDTH;
             oi = 0;
+
             for (ii = 0; ii < len; ii++) {
                 char c = iline[ii];
 
