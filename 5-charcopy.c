@@ -1,7 +1,7 @@
 //
 // charcopy
 //
-// Copy input to output using getchar() and putchar().
+// Copy input to output.
 //------------------------------------------------------------------------------
 
 // C's input/output model is simple: I/O, regardless of where it originates or

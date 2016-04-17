@@ -1,7 +1,7 @@
 //
 // helloworld
 //
-// Print "hello, world"
+// Print the words "hello, world".
 //------------------------------------------------------------------------------
 
 #include <stdio.h>

@@ -1,7 +1,7 @@
 //
 // temploop
 //
-// Print Fahrenheit-Celsius table
+// Print Fahrenheit-Celsius table.
 //------------------------------------------------------------------------------
 
 #include <stdio.h>
