@@ -11,8 +11,7 @@
 
 main()
 {
-    printf("RANGES*\n");
-    printf("------\n");
+    printf("RANGES*\n\n");
 
     printf("Signed char:\t%d\t\t\t%d\n", SCHAR_MIN, SCHAR_MAX);
     printf("Unsigned char:\t%d\t\t\t%d\n", 0, UCHAR_MAX);
@@ -23,6 +22,7 @@ main()
     printf("Signed long:\t%ld\t%ld\n", LONG_MIN, LONG_MAX);
     printf("Unsigned long:\t%d\t\t\t%lu\n", 0, ULONG_MAX);
 
-    printf("\n* 0 is considered positive\n");
+    printf("\n* When signed, 0 is considered positive:\n");
+    printf("  See: https://en.wikipedia.org/wiki/Signed_zero\n");
 }
 
