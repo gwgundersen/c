@@ -2,7 +2,7 @@
 // powerbyvalue
 //
 // Define a function power(m,n) to raise an integer m to a power n.
-//------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 
 // In C functions, all argumented as pased by value. Here, we show a slightly
 // more compact program (notice the power function has one less variable than

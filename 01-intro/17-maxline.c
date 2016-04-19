@@ -2,12 +2,12 @@
 // maxline
 //
 // Print longest input line.
-//------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 
 // This code is designed to highlight an important fact about arrays: while C
-// functions pass arguments by value, the value passed when the name of an array
-// is used is location or address of the beginning of the array. The array
-// elements are not copied.
+// functions pass arguments by value, the value passed when the name of an
+// array is used is location or address of the beginning of the array. The
+// array elements are not copied.
 //
 // Notice that both `copy` and `getline` mutate their argument arrays.
 

@@ -2,7 +2,7 @@
 // power
 //
 // Define a function power(m,n) to raise an integer m to a power n.
-//------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 
 // A function provides a convenient way to encapsulate some computation, which
 // can then be used without worrying about its implementation.

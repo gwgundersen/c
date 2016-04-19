@@ -2,12 +2,12 @@
 // charcopy
 //
 // Copy input to output.
-//------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 
 // C's input/output model is simple: I/O, regardless of where it originates or
 // where it goes, is dealth with as streams of characters. A "text stream" is a
-// sequence of characters divided into lines; each line consists of zero or more
-// characters followed by a newline character.
+// sequence of characters divided into lines; each line consists of zero or
+// more characters followed by a newline character.
 
 #include <stdio.h>
 
