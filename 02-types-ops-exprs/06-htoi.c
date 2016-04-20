@@ -21,7 +21,7 @@ main()
     printf("%d\n", htoi("0X34"));      // 52
     printf("%d\n", htoi("2F"));        // 47
     printf("%d\n", htoi("0x12c9a"));   // 76954
-    printf("%d\n", htoi("-0x12c9a"));  // 76954
+    printf("%d\n", htoi("-0x12c9a"));  // -76954
     printf("%d\n", htoi("0x"));        // Print error message
     printf("%d\n", htoi("1g"));        // Print error message
 }
