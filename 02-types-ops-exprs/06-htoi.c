@@ -15,11 +15,15 @@ int length(char s[]);
 
 main()
 {
-    printf("%d\n", htoi("34"));       // 52
-    printf("%d\n", htoi("0x34"));     // 52
-    printf("%d\n", htoi("0X34"));     // 52
-    printf("%d\n", htoi("2F"));       // 47
-    printf("%d\n", htoi("0x12c9a"));  // 76954
+    printf("%d\n", htoi("34"));        // 52
+    printf("%d\n", htoi("-34"));       // -52
+    printf("%d\n", htoi("0x34"));      // 52
+    printf("%d\n", htoi("0X34"));      // 52
+    printf("%d\n", htoi("2F"));        // 47
+    printf("%d\n", htoi("0x12c9a"));   // 76954
+    printf("%d\n", htoi("-0x12c9a"));  // 76954
+    printf("%d\n", htoi("0x"));        // Print error message
+    printf("%d\n", htoi("1g"));        // Print error message
 }
 
 // htoi: Converts a string of hexadecimal digits into its equivalent integer
@@ -27,14 +31,21 @@ main()
 int htoi(char s[])
 {
     int i, min, len, n;
-    char c;
+    char c, neg;
+
+    // Specifies beginning of string. If string is negative or has preceding 
+    // 0x or 0X characters, min is increased.
+    min = 0;
+    if (s[0] == '-') {
+        neg = 1;
+        min = 1;
+    } else
+        neg = 0;
 
     // Ignore optional 0x or 0X if it exists.
     len = length(s);
-    if (len > 2 && s[0] == '0' && (s[1] == 'x' || s[1] == 'X'))
-        min = 2;
-    else
-        min = 0;
+    if (len > 2 && s[min+0] == '0' && (s[min+1] == 'x' || s[min+1] == 'X'))
+        min += 2;
 
     // Looping from right to left is more natural for this algorithm.
     n = 0;
@@ -46,11 +57,18 @@ int htoi(char s[])
             c = toupper(c);
             // Shift character 
             c = c - 'A' + 10;
+            if (c > 15) {
+                printf("Invalid hexadecimal number.\n");
+                return 0;  // Not sure what is idiomatic. Must return int.
+            }
         } else
-            // Convert character to number. See comment in atoi.c to for more.
+            // Convert character to number. See comment in atoi.c for more.
             c = c - '0';
         n += c * pow(16, len-1-i);
     }
+    
+    if (neg)
+        return 0-n;
     return n;
 }
 
