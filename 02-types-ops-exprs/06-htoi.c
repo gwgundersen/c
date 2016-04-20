@@ -55,7 +55,7 @@ int htoi(char s[])
             // This conversion only works for the ASCII character set.
             // First, ensure that c is an uppercase letter.
             c = toupper(c);
-            // Shift character 
+            // Then shift ASCII value to 0. Then back up to F (10).
             c = c - 'A' + 10;
             if (c > 15) {
                 printf("Invalid hexadecimal number.\n");
