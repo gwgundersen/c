@@ -1,6 +1,3 @@
-//
-// powerbyvalue
-//
 // Define a function power(m,n) to raise an integer m to a power n.
 //-----------------------------------------------------------------------------
 
@@ -12,7 +9,7 @@
 
 int power(int m, int n);
 
-main()
+int main(void)
 {
     int i;
 

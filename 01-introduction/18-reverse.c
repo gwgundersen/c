@@ -1,6 +1,3 @@
-//
-// reverse
-//
 // Reverses its input a line at a time.
 //-----------------------------------------------------------------------------
 
@@ -11,16 +8,14 @@
 int getline_(char line[], int maxline);
 void reverse(char to[], char from[], int lenline, int maxline);
 
-main()
+int main(void)
 {
     int len;             // Current line length.
     char line[MAXLINE];  // Current input line.
     char rev[MAXLINE];   // Reversed input line.
 
-    while ((len = getline_(line, MAXLINE)) > 0) {
+    while ((len = getline_(line, MAXLINE)) > 0)
         reverse(rev, line, len, MAXLINE);
-        //printf("%s", rev);
-    }
     return 0;
 }
 

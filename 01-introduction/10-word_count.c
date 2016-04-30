@@ -1,6 +1,3 @@
-//
-// wordcount
-//
 // Count lines, words, and characters in input.
 //-----------------------------------------------------------------------------
 
@@ -9,7 +6,7 @@
 #define IN  1  // Inside a word.
 #define OUT 0  // Outside a word. 
 
-main()
+int main(void)
 {
     int c, nl, nw, nc, state;
 

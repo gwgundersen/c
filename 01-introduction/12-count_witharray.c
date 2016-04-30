@@ -1,12 +1,9 @@
-//
-// countwitharray
-//
 // Count digits, white space, and others.
 //-----------------------------------------------------------------------------
 
 #include <stdio.h>
 
-main()
+int main(void)
 {
     int c, i, nwhite, nother;
     int ndigit[10];

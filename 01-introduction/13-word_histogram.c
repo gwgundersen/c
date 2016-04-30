@@ -1,6 +1,3 @@
-//
-// wordhist
-//
 // Print a histogram of the lengths of words in input.
 //-----------------------------------------------------------------------------
 
@@ -10,7 +7,7 @@
 #define IN      1   // Inside a word.
 #define OUT     0   // Outside a word.
 
-main()
+int main(void)
 {
     int c, state, len, i, j;
     int lword[MAX_LEN];

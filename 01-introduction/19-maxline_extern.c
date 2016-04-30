@@ -1,6 +1,3 @@
-//
-// maxline
-//
 // Print longest input line.
 //-----------------------------------------------------------------------------
 
@@ -15,7 +12,7 @@ char longest[MAXLINE];  // Longest line so far.
 int getline_(void);
 void copy(void);
 
-main()
+int main(void)
 {
     int len;  // Current line length.
     extern int max;

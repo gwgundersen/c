@@ -1,6 +1,3 @@
-//
-// maxline
-//
 // Print longest input line.
 //-----------------------------------------------------------------------------
 
@@ -9,19 +6,16 @@
 // array is used is location or address of the beginning of the array. The
 // array elements are not copied.
 //
-// Notice that both `copy` and `getline` mutate their argument arrays.
+// Notice that both `copy` and `getline_` mutate their argument arrays.
 
 #include <stdio.h>
 
 #define MAXLINE 1000  // Maximum input line size.
 
-// `getline` is a function defined in <stdio.h> in current versions. Probably
-// was not defined for K&R. The compiler will throw an exception if you name
-// the function `getline`.
 int getline_(char line[], int maxline);
 void copy(char to[], char from[]);
 
-main()
+int main(void)
 {
     int len;  // Current line length.
     int max;  // Maximum length seen so far.

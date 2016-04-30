@@ -1,7 +1,4 @@
-//
-// printwords
-//
-// Prints its input one word per line.
+// Print input one word per line.
 //-----------------------------------------------------------------------------
 
 #include <stdio.h>
@@ -9,7 +6,7 @@
 #define IN  1  // Inside a word.
 #define OUT 0  // Outside a word. 
 
-main()
+int main(void)
 {
     int c, state;
 

@@ -1,6 +1,3 @@
-//
-// tempfunc
-//
 // Print Fahrenheit-Celsius table using a function.
 //-----------------------------------------------------------------------------
 
@@ -12,7 +9,7 @@
 
 double fahr2celsius(int fahr);
 
-main()
+int main(void)
 {
     int fahr;
 

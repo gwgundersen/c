@@ -1,6 +1,3 @@
-//
-// power
-//
 // Define a function power(m,n) to raise an integer m to a power n.
 //-----------------------------------------------------------------------------
 
@@ -20,7 +17,7 @@
 // Parameter names are optional and need not agree with the definition.
 int power(int m, int n);
 
-main()
+int main(void)
 {
     int i;
 
