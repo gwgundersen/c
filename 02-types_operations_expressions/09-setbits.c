@@ -38,7 +38,7 @@ unsigned setbits(unsigned x, int p, int n, unsigned y)
     //                                                   ---
     // (~(~0 << n) & y) << (p+1-n)       0000 0000 0000 1000  y bits shifted p positions to x
     //                                               -- -
-    unsigned a = (~(~0 << n) & y) << (p+1-n);  //             8 in decimal
+    unsigned a = (~(~0U << n) & y) << (p+1-n);  //            8 in decimal
 
     // Create 0-mask where y bits will go on x:
     //
@@ -51,7 +51,7 @@ unsigned setbits(unsigned x, int p, int n, unsigned y)
     //                                               -- -
     // (~(~(~0 << n) << (p+1-n))) & x    0000 0001 0000 0011
     //                                               -- -
-    unsigned b = (~(~(~0 << n) << (p+1-n))) & x;  //          259 in decimal
+    unsigned b = (~(~(~0U << n) << (p+1-n))) & x;  //         259 in decimal
 
     // a                                 0000 0000 0000 1000
     // b                                 0000 0001 0000 0011
