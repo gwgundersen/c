@@ -1,6 +1,3 @@
-//
-// charcopy
-//
 // Copy input to output.
 //-----------------------------------------------------------------------------
 
@@ -11,7 +8,7 @@
 
 #include <stdio.h>
 
-main()
+int main(void)
 {
     // The type char is specifically for storing character data but the type
     // int can be used as well. We use int because it is bigger than char and

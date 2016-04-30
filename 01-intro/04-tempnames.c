@@ -1,7 +1,4 @@
-//
-// tempnames
-//
-// Print Fahrenheit-Celsius table.
+// Print Fahrenheit-Celsius table using a compact for loop.
 //-----------------------------------------------------------------------------
 
 #include <stdio.h>
@@ -16,11 +13,12 @@
 #define UPPER 300  // Upper limit.
 #define STEP  29   // Step size.
 
-main()
+int main(void)
 {
     // Compared to exercise 3, most variables are eliminated. They appear as
     // constants in the for-loop construction.
     int fahr;
+
     for (fahr = LOWER; fahr <= UPPER; fahr = fahr + STEP) {
         printf("%3d\t%6.1f\n", fahr, (5.0/9.0)*(fahr-32));
     }

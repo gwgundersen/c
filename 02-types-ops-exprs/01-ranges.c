@@ -1,6 +1,3 @@
-//
-// ranges
-//
 // Determine ranges of char, short, int, and long variables, both signed and
 // unsigned, by printing appropriate values from standard headers and by direct
 // computation.
@@ -9,7 +6,7 @@
 #include <limits.h>
 #include <stdio.h>
 
-main()
+int main(void)
 {
     printf("RANGES*\n\n");
 

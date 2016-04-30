@@ -1,6 +1,3 @@
-//
-// strcat
-//
 // Concatenates two strings together.
 //-----------------------------------------------------------------------------
 
@@ -8,7 +5,7 @@
 
 void strcat_(char s[], char t[]);
 
-main()
+int main(void)
 {
     // If you do not allocate enough memory, you will get a runtime error,
     // "Abort trap: 6."

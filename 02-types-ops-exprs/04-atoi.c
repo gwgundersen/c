@@ -1,6 +1,3 @@
-//
-// atoi
-//
 // Convert string to integer.
 //-----------------------------------------------------------------------------
 
@@ -8,7 +5,7 @@
 
 int atoi(char s[]);
 
-main()
+int main(void)
 {
     int i = atoi("3141592");
     printf("%d\n", i);

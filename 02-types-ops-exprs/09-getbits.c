@@ -1,6 +1,3 @@
-//
-// getbits
-//
 // Get bits from integral type.
 //-----------------------------------------------------------------------------
 
@@ -8,7 +5,7 @@
 
 unsigned getbits(unsigned x, int p, int n);
 
-main()
+int main(void)
 {
     int x, p, n;
 

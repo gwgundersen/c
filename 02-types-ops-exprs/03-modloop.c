@@ -1,6 +1,3 @@
-//
-// modloop
-//
 // Write a loop equivalent to the for loop below without using && or ||:
 //
 // for (i=0; i<lim-1 && (c=getchar()) != '\n' && c != EOF; ++i)
@@ -11,7 +8,7 @@
 
 int loop(char s[], int lim);
 
-main()
+int main(void)
 {
     int i, lim;
     lim = 1000;

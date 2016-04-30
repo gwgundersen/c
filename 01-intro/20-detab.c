@@ -1,7 +1,4 @@
-//
-// detab
-//
-// Replaces tabs in the input with the proper number of blanks to space to the
+// Replace tabs in the input with the proper number of blanks to space to the
 // next tab stop. Assume a fixed set of tab stops, say every n columns.
 //-----------------------------------------------------------------------------
 
@@ -32,7 +29,7 @@
 
 int getline_(char line[], int maxline);
 
-main()
+int main(void)
 {
     // This program's complexity comes from the fact that there are two loops.
     // The first loops over the input line, and uses its own index to get the

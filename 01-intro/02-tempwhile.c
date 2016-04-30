@@ -1,12 +1,9 @@
-//
-// tempwhile
-//
-// Print Fahrenheit-Celsius table.
+// Print Fahrenheit-Celsius table using a while loop.
 //-----------------------------------------------------------------------------
 
 #include <stdio.h>
 
-main()
+int main(void)
 {
     // Variable declarations: type information and symbols.
     // The range of both int and float types are machine-dependent.

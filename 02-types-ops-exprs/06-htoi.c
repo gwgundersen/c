@@ -13,7 +13,7 @@
 int htoi(char s[]);
 int length(char s[]);
 
-main()
+int main(void)
 {
     printf("%d\n", htoi("34"));        // 52
     printf("%d\n", htoi("-34"));       // -52

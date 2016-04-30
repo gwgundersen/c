@@ -1,12 +1,9 @@
-//
-// linecount
-//
 // Count lines in input.
 //-----------------------------------------------------------------------------
 
 #include <stdio.h>
 
-main()
+int main(void)
 {
     int c, nl;
 

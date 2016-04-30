@@ -1,13 +1,10 @@
-//
-// blankreplace
-//
-// Copies input to output, replacing each string of one or more blanks by a
+// Copy input to output, replacing each string of one or more blanks by a
 // single blank.
 //-----------------------------------------------------------------------------
 
 #include <stdio.h>
 
-main()
+int main(void)
 {
     int c, fl;
 

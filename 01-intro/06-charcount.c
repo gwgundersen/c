@@ -1,12 +1,9 @@
-//
-// charcount
-//
 // Count characters in input.
 //-----------------------------------------------------------------------------
 
 #include <stdio.h>
 
-main()
+int main(void)
 {
     // long integers are at least 32 bits. On some machines, int and long can
     // be the same size (both 32 bits) but on others int is 16 while long is 32

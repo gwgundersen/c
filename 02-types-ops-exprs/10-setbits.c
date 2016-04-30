@@ -1,6 +1,3 @@
-//
-// setbits
-//
 // Set bits shifts a bit pattern within an integral type.
 //-----------------------------------------------------------------------------
 
@@ -8,7 +5,7 @@
 
 unsigned setbits(unsigned x, int p, int n, unsigned y);
 
-main()
+int main(void)
 {
     unsigned x, y, z;
     int p, n;

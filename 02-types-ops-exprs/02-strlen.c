@@ -1,14 +1,11 @@
-//
-// strlen
-//
-// K&R's implementation of strlen.
+// Compute length of string.
 //-----------------------------------------------------------------------------
 
 #include <stdio.h>
 
 int strlen_(char s[]);
 
-main()
+int main(void)
 {
     int len = strlen_("hello, world");
     printf("%d\n", len);

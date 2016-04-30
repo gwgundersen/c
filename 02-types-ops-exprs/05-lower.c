@@ -1,6 +1,3 @@
-//
-// lower
-//
 // Converts character to lower case; ASCII only.
 //-----------------------------------------------------------------------------
 
@@ -8,7 +5,7 @@
 
 char lower(char c);
 
-main()
+int main(void)
 {
     char c = lower('X');
     printf("%c\n", c);

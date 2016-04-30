@@ -1,12 +1,9 @@
-//
-// bits
-//
-// Playing around with bits
+// Playing around with bits.
 //-----------------------------------------------------------------------------
 
 #include <stdio.h>
 
-main()
+int main(void)
 {
     int a, b, c;
 
