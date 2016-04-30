@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 
+#define WORDSIZE 32
+
 unsigned rightrot(unsigned x, int n);
 
 int main(void)
@@ -44,5 +46,5 @@ unsigned rightrot(unsigned x, int n)
 {
     if (n == 0)
         return x;
-    return (x << n) | (x >> (32 - n));
+    return (x << n) | (x >> (WORDSIZE - n));
 }
